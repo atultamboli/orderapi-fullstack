@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b9ad3bb4-ae0b-44db-8b6c-f9112b4f2397</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Ensure the data files get copied next to the build output so
+         CsvOrderRepository can find them at runtime via ContentRootPath. -->
+    <None Include="Data\*.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Anthropic.SDK" Version="5.10.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.12.0" />
+    <PackageReference Include="OpenAI" Version="2.12.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+# Build output
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+*.user
+
+# Personal study notes — not part of the project
+*.docx
+
+# Secrets — never commit these
+.env
+.env.*
+secrets.json
+
+# Node (for the React/Angular frontends later)
+node_modules/
+dist/
+
+# Python (for the FastAPI backend later)
+__pycache__/
+.venv/
