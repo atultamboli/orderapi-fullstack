@@ -22,3 +22,6 @@ dist/
 # Python (for the FastAPI backend later)
 __pycache__/
 .venv/
+
+# Personal notes — not for GitHub
+MY_GUIDE.md
